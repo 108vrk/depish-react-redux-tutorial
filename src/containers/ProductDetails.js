@@ -20,12 +20,12 @@ const ProductDetails = () => {
     dispatch(selectedProduct(response.data));
   };
 
-  useEffect(() => {
+  /* useEffect(() => {
     if (productId && productId !== "") fetchProductDetail(productId);
     return () => {
       dispatch(removeSelectedProduct());
     };
-  }, [productId]);
+  }, [productId]); */
   return (
     <div className="ui grid container">
       {Object.keys(product).length === 0 ? (
